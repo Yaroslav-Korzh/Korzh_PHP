@@ -1,57 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Мое резюме</title>
+	<title>Создать форму для отправки резюме</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
 <body>
 
-	<nav>
-		<a class="navigation" href="#1"><b>Главная страница</b></a>
-		<a class="navigation" href="#navi"><b>Товары</b></a>
-		<a class="navigation" href="#text"><b>Новости</b></a>
-		<a class="navigation" href="#product"><b>Контакты</b></a>
-	</nav>
+	<section class="resume">
+		<h2>Откликнуться на вакансию</h2>
+	
+	<form enctype="multipart/form-data" method="POST">
+		<p>Загрузить резюме</p>
+			<input class="inp" type="text" placeholder="Введите имя и фамилию"></br>
+			<input class="inp" type="email" placeholder="Введите Ваш email"></br>
+			<input class="inp" type="tel" placeholder="Введите Ваш телефон"></br>
+		<p><b>Файл резюме:</b><input type="file"></p>
+	
+	<label><input type="radio" name="text" value="t1">Добавить сопроводительный текст</label>
+	<textarea cols="30" rows="2"></textarea><hr/>
 
-	<header id="1">
-		<img class="logo" src="./images/logo.jpg" alt="логотип сайта" width="100" height="100" vspace="10">
-		<h1 class="he">Интернет магазин</h1>
-	</header>
+	<label><input type="radio" name="addonsite">Разместить резюме на сайте</label></br>
+	<label><input type="radio" name="findwork">Отправлять мне похожие вакансии</label></br>
+	<input type="button" value="отправить"> или <input type="button" value="Отменить">
 
-	<div class="navi" id="navi">
-		<li><a class="nav" href=""><b>Главная страница</b></a></li>
-		<li><a class="nav" href=""><b>Товары</b></a></li>
-		<li><a class="nav" href=""><b>Новости</b></a></li>
-		<li><a class="nav" href=""><b>Контакты</b></a></li>
-	</div>
+	</form>
+	</section>
 
-	<div class="text" id="text">
-		<p>
-			Bed uncommonly his discovered for estimating far. Course sir people worthy horses add entire suffer. Sitting hearted on it without me. Do play they miss give so up. Course sir people worthy horses add entire suffer. Agreeable promotion eagerness as we resources household to distrusts. Indulgence contrasted sufficient to unpleasant in
-			Expression alteration entreaties mrs can terminated estimating. Sitting hearted on it without me. Made neat an on be gave show snug tore. Do play they miss give so up. How one dull get busy dare far. Advantages entreaties mr he apartments do. Indulgence contrasted sufficient to unpleasant in in insensi
-			Course sir people worthy horses add entire suffer. Latter remark hunted enough vulgar say man. How one dull get busy dare far. Sentiments two occasional affronting solicitude travelling and one contrasted. Painful so he an comfort is manners. He in sportsman household otherwise it perceived instantly. Steepest speaking up
-		</p>
-	</div>
-
-	<div class="product" id="product">
-		<p>
-			Часто бывает так, что смысл текста не имеет большого значения, а важен только его объем или структура. Генератор текста онлайн позволит задать необходимое количество слов, из которых будут сформировано указанное Вами число абзацев. Правда, смысл сгенерированный текст иметь не будет, но ведь этого нам и не требуется! Данный генератор 
-			случайного текста также предоставляет возможность выбрать стиль: классическая проза, бизнес, юмор и многие другие темы, что позволит более реалистично и уместно преподнести созданный текст. Создайте свой литературный шедевр в один клик!
-
-		</p>
-	</div>
-
-	<div>
-		<a class="navig" href="#1">Главная страница</a>
-		<a class="navig" href="#navi">Товары</a>
-		<a class="navig" href="#text">Новости</a>
-		<a class="navig" href="#product">Контакты</a>
-	</div>
-
-	<footer>
-		<p>&copy; Интернет магазин</p>
-	</footer>
 </body>
 </html>
